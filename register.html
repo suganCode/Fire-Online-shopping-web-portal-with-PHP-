@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fire online Shopping </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link id="callCss" rel="stylesheet" href="themes/bootshop/bootstrap.min.css" media="screen"/>
+    <link href="themes/css/base.css" rel="stylesheet" media="screen"/>
+	<link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="themes/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="themes/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+	<style type="text/css" id="enject"></style>
+  </head>
+
+  <script src="themes/js/jquery.js" type="text/javascript"></script>
+	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="themes/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="themes/js/bootshop.js"></script>
+    <script src="themes/js/jquery.lightbox-0.5.js"></script>
+  <script>
+
+ /////////
+
+ ///////////// 
+
+  </script>
+
+<body>
+
+
+	<div id="header">
+		<div class="container">
+		
+
+			<div id="welcomeLine" class="row">
+				<div  class="span6 "> <span> WELCOME ! </span>   <strong></strong></div>
+				<div class="span6">
+				
+					<div class="pull-right cont" style="background-color:#131c4d;color:white;padding:4px;" >
+					
+					 <span  class="noitems"> 0 </span>  Items you ordered
+					</div>
+				</div>
+				
+			</div>
+
+<!-- Navbar ================================================== -->
+
+
+
+<div id="logoArea" class="navbar">
+
+	<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+	
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</a>
+	
+	  <div class="bg" style="padding:18px;margin:7px"  >
+	
+				<i><small style="color:white;font-size:24px;"> Fire Online Shopping  </small>
+				</i>
+				
+				<form style="display: inline;" class="form-submit" >
+				
+					<input title="userinput" id="srchFld" class="srchTxt" type="text" style="text-align:center;" />
+					<select title="items"  class="srchTxt" id="selectvalue">
+					<option>cloth</option>
+					<option>shoes</option>
+					<option>books</option> 
+					<option>mobile</option>
+					<option>facewash</option>
+					<option>laptop</option> 
+					<option>camera</option>
+				</select> 
+				<br class="hidden-br" />
+				  <input title="sm" type="submit" value="SEARCH" style="background-color:rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;margin-left:7px;;" class="search" id="submitButton" 
+				  class="btn btn-primary"> 
+				</form> 
+				
+		<ul id="topMenu" class="nav pull-right">
+		 <li class=""><a href="products.html?val=CLOTHES&query=cloth">Special Offers</a>
+		</li>
+		 <li class=""><a href="contact.html">Contact</a></li>
+		
+			 
+				<a href="#login"  data-toggle="modal" ><button  type="button" style="background-color: rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;"  
+				>LOGIN</button></a>
+	
+				<a href="#signup"  data-toggle="modal" ><button  type="button" style="background-color: rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;"  
+					>SIGNUP</button></a>
+		
+		<div  id="signup"  class="modal hide fade in "  style="width:300;"  role="dialog" aria-labelledby="login" aria-hidden="false" >
+			
+			<div class="modal-header"  >
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Signup Block</h3>
+			  </div>   
+			  <p style="color:red;font-style: italic;font-size:20px;margin-left: 20px;" class="msgline"></p>
+			  <div class="modal-body">
+				<form class="form-horizontal loginFrm" >
+				  <div class="control-group">								
+					<input type="text" class="user" placeholder="Email">
+				  </div>
+				  <div class="control-group">
+					<input type="password" class="pass" placeholder="Password">
+				  </div>
+				  <div class="control-group">
+					<p>password must have atleast 4 characters</p>
+					<input title="sm" type="checkbox"> Remember me
+				  </div> 
+	
+				  <div class="control-group" style="margin-left:50px;">
+					<button  type="submit" class="btn btn-success" id="signupbtn">Sign up</button>
+					<button class="btn" data-dismiss="modal" style="margin-left:20px;" aria-hidden="true">Close</button>
+				</div>
+	
+				</div>
+			 </form>
+			
+			<br/>
+		</div>
+	  
+		<div  id="login" class="modal hide fade in "  style="width:300;text-align: center;" role="dialog" aria-labelledby="login" aria-hidden="false" >
+			
+			<div class="modal-header"  >
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Signin Block</h3>
+			  </div>   
+			  <p style="color:red;font-style: italic;font-size:20px;margin-left: 20px;" class="msgline1"></p>
+			  <div class="modal-body">
+				<form class="form-horizontal loginFrm" >
+				  <div class="control-group">								
+					<input type="text" class="user1" placeholder="Email">
+				  </div>
+				  <div class="control-group">
+					<input type="password" class="pass1" placeholder="Password">
+				  </div>
+				  <div class="control-group">
+					<p>password must have atleast 4 characters</p>
+	
+					<input title="sm" type="checkbox"> Remember me
+				  </div> 
+			</div>
+			<div style="margin-left:0px;">
+				<button  type="submit" class="btn btn-success" id="loginbtn">SIGNIN</button>
+				<button  type="submit" id="logout" style="margin-left:20px;" class="btn btn-success" >SIGNOUT </button> 
+			</div>
+			</form> 
+			<br/>
+		</div>
+	
+		</ul>
+	  </div>
+	</div>
+	</div>
+	</div>
+	
+<!-- Header End====================================================================== -->
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+<!-- Sidebar ================================================== -->
+<div id="sidebar" class="span3" >
+	<div class="well well-small"  style="background-color: #131c4d;color:white;" >
+		<img src="themes/images/ico-cart.png" alt="cart">
+		 <span style="font: size 50%;" class="noitems">0
+		</span> Items you ordered 
+		 <span  class="badge badge-warning pull-right" style="font-size:10px;">₹ <span id="total">0</span></span></div>
+	<ul id="sideManu" class="nav nav-tabs nav-stacked">
+		<li class="subMenu open"><a> ELECTRONICS </a>
+			<ul>
+			<li><a class="active" href="products.html?val=CAMERAS&query=camera" ><i class="icon-chevron-right"></i>Cameras   </a></li>
+			<li><a href="products.html?val=LAPTOP&query=laptop"  ><i class="icon-chevron-right"></i>laptop </a></li>
+			<li><a href="products.html?val=MOBILE&query=mobile"><i class="icon-chevron-right"></i>Mobile Phone </a></li>
+			<li><a href="products.html?val=FACE WASH&query=facewash" ><i class="icon-chevron-right"></i>Face wash</a></li>
+			</ul>
+		</li>
+		<li ><a href="products.html?val=CLOTHES&query=cloth" > <i class="icon-chevron-right"></i>CLOTHES </a>
+		
+		</li>
+		
+		<li><a href="products.html?val=shoes&query=shoes" ><i class="icon-chevron-right"></i>SPORTS </a></li>
+		<li><a href="products.html?val=BOOKS&query=books" ><i class="icon-chevron-right"></i>BOOKS </a></li>
+	</ul>
+	<br class="cont" />
+	  <div class="thumbnail cont">
+		<img src="themes/images/products/virat.jpg" alt=" panasonoc New camera"/>
+		<div class="caption">
+			
+		</div>
+	  </div><br class="cont"/>
+		<div class="thumbnail cont">
+			<img src="themes/images/products/dhoni.jpg" title=" New Kindel" alt="Kindel">
+			<div class="caption">
+					
+			</div>
+			<br class="cont" />
+		</div><br class="cont" />
+
+
+</div>
+<!-- Sidebar end=============================================== -->
+	<div class="span9" style="align-items:center">
+    <ul class="breadcrumb">
+		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+		<li class="active">Registration</li>
+    </ul>
+	<h3 class="center" style="background-color:#131c4d;color:white">FILL THE COLUMNS TO ORDER ITEMS</h3>	
+	<div class="well">
+	
+	<form class="form-horizontal"  >
+		<h4>personal information</h4>
+	
+		<div class="control-group">  
+		<label class="control-label" for="input_email">Email <sup>*</sup></label>
+		<div class="controls">
+		  <input type="email" id="email" placeholder="Email">
+		</div>
+	  </div>	  
+		  
+		<div class="control-group">
+		<label class="control-label">Date of Birth <sup>*</sup></label>
+		<input id="date"  type="date" placeholder="date"/>
+	  </div>
+
+		<div class="control-group">
+			<label class="control-label" for="inputLname"> name <sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="name" placeholder=" Name"/>
+			</div>
+		</div>
+		
+		
+		<div class="control-group">
+			<label class="control-label" for="address">Address<sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="address" placeholder="Adress"/> 
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="city">City<sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="city" placeholder="city"/> 
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="state">State<sup>*</sup></label>
+			<input  id='state' type="text" placeholder="state">
+		</div>		
+		<div class="control-group">
+			<label class="control-label" for="postcode">Zip / Postal Code<sup>*</sup></label>
+			<div class="controls">
+			  <input type="number" id="postcode" placeholder="Zip / Postal Code"/> 
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="country">Country<sup>*</sup></label>
+			<input  type="text" id="country" />
+		</div>	
+		
+		
+		<div class="control-group">
+			<label class="control-label" for="mobile">Enter only 10 digit mobile number  </label>
+			<div class="controls">
+			  <input  type="number"  name="mobile" id="mobile" placeholder="Mobile Phone"/> 
+			</div>
+		</div>
+		
+		<pr>   </pr><div class="control-group">
+			<div class="controls">
+				<input   class="btn btn-large btn-success" id="sub" type="submit" value="Order product" />
+			</div>
+		</div>	
+	</form>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- MainBody End ============================= -->
+<!-- Footer ================================================================== -->
+	
+
+<div  id="footerSection">
+	<div class="container">
+		<div class="row">  
+			<div class="span3">
+				<h5>ADMIN BLOG</h5>
+				<a href="Admin.html">ADMIN PAGE</a>   
+				<a href="Logout.html">ADMIN LOGOUT</a> 
+				<a href="Adminpanel.html">ADMIN PANEL</a>
+				<a href="Adminlogin.html">ADMIN LOGIN</a>
+				<a href="Addpr.html">ADD MORE PRODUCTS</a>
+			 </div>
+			<div class="span3">
+				<h5>INFORMATION</h5>
+				<a href="index.html">HOME PAGE</a>  
+				<a href="contact.html">CONTACT</a>  
+				<a href="contact.html">LEGAL NOTICE</a>  
+				<a href="contact.html">TERMS AND CONDITIONS</a> 
+			 </div>  
+			<div class="span3 ">
+				<h5>OUR OFFERS</h5>
+				<a href="#">FEATURED PRODUCTS</a> 
+				<a href="#">LATEST OFFERS</a>  
+				<a href="#">SUPPLIERS</a> 
+			 </div>
+			<div id="socialMedia" class="span3 ">
+				<h5>SOCIAL MEDIA </h5>
+				<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube"/></a>
+			 </div> 
+		 </div>
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	
+	
+	<!-- Themes switcher section ============================================================================================= -->
+
+<span id="themesBtn"></span>
+</body>
+
+
+<script src="Fun.js"></script>
+
+<script>
+
+///////////// check  wether the user logined or not
+
+$.ajax({
+
+url: 'Demo.php',
+
+method: 'get',
+
+data: {logincheck:1},
+
+success: result=> {
+
+try{
+
+	obj=JSON.parse(result);
+	
+if(obj.user=="" | obj.pass==""){
+confirm("Please login to order items");
+window.location.href="index.html";
+}
+
+}catch(execption){
+
+	console.log("Can't buy products because user yet not logined");
+	confirm("Please login to order items");
+	window.location.href="index.html";
+
+}
+
+}
+
+
+});
+
+
+////////////
+
+const url=new URL(window.location.href);
+  
+  Pname=url.searchParams.get("name"); 
+  cost=url.searchParams.get("cost");
+  prod_name=url.searchParams.get("prod_name");
+
+$('#sub').click(evnt=> { 
+
+	event.preventDefault();
+	name=$('#name').val();
+	email=$('#email').val();
+	address=$('#address').val();
+	date=$('#date').val();
+	mobile=$("#mobile").val();
+	city=$('#city').val();
+	state=$("#state").val();
+	country=$("#country").val();
+	postcode=$("#postcode").val();
+   
+	allow=false;
+
+	if(email.endsWith("@gmail.com") &&  mobile.length==10   ){
+
+		allow=true;
+
+	}
+
+  var obj={name,email,address,date,mobile,city,state,country,postcode};
+
+   //alert(name+email+city+country+state+postcode+address+cost+Pname+mobile);
+
+   isempty=false;
+
+   function prop(obj) {
+	for (const key of Object.keys(obj)) {
+    	if (obj[key] ==="") {
+            return true
+        }
+    }
+
+	return false
+         }
+
+isempty =prop(obj); 
+
+if(isempty==true | allow==false){
+	confirm("Please Enter the valid details");
+}
+else{
+
+	
+$.ajax({
+
+url: 'Demo.php',
+
+method: 'get',
+
+data: { reg:1,name,Pname,cost,address,state,postcode,city,country,email,mobile},
+
+success: (result) => {
+
+obj=JSON.parse(result);
+
+
+
+if(obj.status=202){
+	confirm("Product  successfully ordered");
+
+	if( prod_name === null || prod_name === undefined || String(prod_name).toLowerCase() === 'null' || String(prod_name).toLowerCase() === 'undefined'){
+
+		prod_name="books";
+
+	}
+
+	top.location="products.html?val="+prod_name+"&"+"query="+prod_name;
+
+}
+else{
+    confirm("Sorry Product not ordered");
+}
+
+
+}
+
+
+});
+
+
+}
+
+});
+
+
+
+</script>
+
+</html>
+

@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fire Online Shopping </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> 	
+    <link id="callCss" rel="stylesheet" href="themes/bootshop/bootstrap.min.css" media="screen"/>
+    <link href="themes/css/base.css" rel="stylesheet" media="screen"/>
+	<link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="themes/css/font-awesome.css" rel="stylesheet" type="text/css">
+<!-- Google-code-prettify -->	
+	<link href="themes/js/google-code-prettify/prettify.css" rel="stylesheet"/>
+<!-- fav and touch icons -->
+<link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+
+	<style type="text/css" id="enject"></style>
+  </head>
+  <script src = "themes/js/source.js" ></script>
+<body>
+
+<div id="header">
+<div class="container">
+
+
+<div id="welcomeLine" class="row">
+	<div  class="span6 "> <span> WELCOME ! </span>   <strong></strong></div>
+	<div class="span6">
+    
+	    <div class="pull-right cont" style="background-color:#131c4d;color:white;padding:4px;" >
+		
+         <span  class="noitems"> 0 </span>  Items you ordered
+	    </div>
+	</div>
+	
+</div>
+
+
+<!-- Navbar ================================================== -->
+
+
+<div id="logoArea" class="navbar">
+
+<a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
+
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</a>
+
+  <div class="bg" style="padding:18px;margin:7px"  >
+
+			<i><small style="color:white;font-size:24px;"> Fire Online Shopping  </small>
+			</i>
+
+			<form style="display: inline;" class="form-submit" >
+
+			<input title="userinput" id="srchFld" class="srchTxt" type="text" style="text-align:center;" />
+		    <select title="items"  class="srchTxt" id="selectvalue">
+			<option>cloth</option>
+			<option>shoes</option>
+			<option>books</option> 
+			<option>mobile</option>
+			<option>facewash</option>
+			<option>laptop</option> 
+			<option>camera</option>
+		</select> 
+		<br class="hidden-br" />
+		  <input title="sm" type="submit" value="SEARCH" style="background-color:rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;margin-left:7px;;" class="search" id="submitButton" 
+		  class="btn btn-primary"> 
+        </form> 
+
+    <ul id="topMenu" class="nav pull-right">
+	 <li class=""><a href="products.html?val=CLOTHES&query=cloth">Special Offers</a>
+	</li>
+	 <li class=""><a href="contact.html">Contact</a></li>
+	 
+	 	
+			<a href="#login"  data-toggle="modal" ><button  type="button" style="background-color: rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;"  
+			>LOGIN</button></a>
+
+			<a href="#signup"  data-toggle="modal" ><button  type="button" style="background-color: rgb(255, 0, 55);color:white;padding:8px;border-radius: 5px;"  
+				>SIGNUP</button></a>
+	
+	<div  id="signup"  class="modal hide fade in "  style="width:300;"  role="dialog" aria-labelledby="login" aria-hidden="false" >
+		
+		<div class="modal-header"  >
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Signup Block</h3>
+		  </div>   
+		  <p style="color:red;font-style: italic;font-size:20px;margin-left: 20px;" class="msgline"></p>
+		  <div class="modal-body">
+			<form class="form-horizontal loginFrm" >
+			  <div class="control-group">								
+				<input type="text" class="user" placeholder="Email">
+			  </div>
+			  <div class="control-group">
+				<input type="password" class="pass" placeholder="Password">
+			  </div>
+			  <div class="control-group">
+				<p>password must have atleast 4 characters</p>
+				<input title="sm" type="checkbox"> Remember me
+			  </div> 
+
+			  <div class="control-group" style="margin-left:50px;">
+				<button  type="submit" class="btn btn-success" id="signupbtn">Sign up</button>
+				<button class="btn" data-dismiss="modal" style="margin-left:20px;" aria-hidden="true">Close</button>
+			</div>
+
+			</div>
+         </form>
+		
+		<br/>
+	</div>
+  
+	<div  id="login" class="modal hide fade in "  style="width:300;text-align: center;" role="dialog" aria-labelledby="login" aria-hidden="false" >
+		
+		<div class="modal-header"  >
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3>Signin Block</h3>
+		  </div>   
+		  <p style="color:red;font-style: italic;font-size:20px;margin-left: 20px;" class="msgline1"></p>
+		  <div class="modal-body">
+			<form class="form-horizontal loginFrm" >
+			  <div class="control-group">								
+				<input type="text" class="user1" placeholder="Email">
+			  </div>
+			  <div class="control-group">
+				<input type="password" class="pass1" placeholder="Password">
+			  </div>
+			  <div class="control-group">
+				<p>password must have atleast 4 characters</p>
+
+				<input title="sm" type="checkbox"> Remember me
+			  </div> 
+		</div>
+		<div style="margin-left:0px;">
+			<button  type="submit" class="btn btn-success" id="loginbtn">SIGNIN</button>
+			<button  type="submit" id="logout" style="margin-left:20px;" class="btn btn-success" >SIGNOUT </button> 
+		</div>
+		</form> 
+		<br/>
+	</div>
+
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Header End====================================================================== -->
+<div id="carouselBlk" style="margin:4px;">
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">   
+		  <div class="item active">  
+		  <div class="container">
+			<img style="width:100%" src="themes/images/carousel/19.png" alt="special offers"/>
+			
+			<div class="carousel-caption">  
+				</div>
+		  </div>
+		  </div>
+		  <div class="item">
+		  <div class="container">
+			
+				<img style="width:100%" src="themes/images/carousel/22.png" alt=""/>
+				<div class="carousel-caption">
+				</div>
+		  </div>
+		  </div>
+		  <div class="item">
+		  <div class="container">
+			<img src="themes/images/carousel/21.png" alt=""/>
+			<div class="carousel-caption">
+				</div>
+			
+		  </div>
+		  </div>
+		   <div class="item">
+		   <div class="container">
+			<img src="themes/images/carousel/20.png" alt=""/>
+			<div class="carousel-caption">
+				  <h4>Second Thumbnail label</h4>
+				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				</div>
+		   
+		  </div>
+		  </div>
+		   
+		   <div class="item">
+		   <div class="container">
+		<img src="themes/images/carousel/15.png" alt=""/>
+			<div class="carousel-caption">
+				</div>
+		  </div>
+		  </div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  </div> 
+</div>
+
+<!-- Sidebar ================================================== -->
+
+
+<div id="mainBody">
+	<div class="container">
+	<div class="row">
+	<div id="sidebar" class="span3" >
+		<div class="well well-small " style="background-color: #131c4d;color:white;"  >
+			<img src="themes/images/ico-cart.png" alt="cart">
+			 <span style="font: size 50%;" class="noitems">0
+			</span> Items you ordered
+			 <span  class="badge badge-warning pull-right" style="font-size:10px;">₹ 
+				<span id="total">0</span></span></div>
+		<ul  id="sideManu" class="nav nav-tabs nav-stacked">
+			<li class="subMenu open"><a> ELECTRONICS </a>
+				<ul>
+				<li >
+					<a class="active" href="products.html?val=CAMERAS&query=camera" >
+						<i  class="icon-chevron-right"></i>Cameras   </a></li>
+				<li><a href="products.html?val=LAPTOP&query=laptop"  ><i class="icon-chevron-right"></i>laptop </a></li>
+				<li><a href="products.html?val=MOBILE&query=mobile"><i class="icon-chevron-right"></i>Mobile Phone </a></li>
+				<li><a href="products.html?val=FACE WASH&query=facewash" ><i class="icon-chevron-right"></i>Face wash</a></li>
+				</ul>
+			</li>
+			<li ><a href="products.html?val=CLOTHES&query=cloth" > <i class="icon-chevron-right"></i>CLOTHES </a>
+			
+			</li>
+			
+			<li><a href="products.html?val=shoes&query=shoes" ><i class="icon-chevron-right"></i>SPORTS </a></li>
+			<li><a href="products.html?val=BOOKS&query=books" ><i class="icon-chevron-right"></i>BOOKS </a></li>
+		</ul>
+		<br/>
+
+		 <div class="cont">
+
+	
+      	  <div class="thumbnail">
+			<img src="themes/images/products/virat.jpg" alt=" panasonoc New camera"/>
+			<div class="caption">
+				
+			</div>
+		  </div>   <br/>
+			<div class="thumbnail">
+				<img src="themes/images/products/dhoni.jpg" title="New Kindel" alt=" Kindel">
+				<div class="caption">
+						
+				</div>
+				<br/>
+			</div><br/>
+
+			
+			<div class="thumbnail">
+				<img src="themes/images/products/diwali.jpg" title="Payment Methods" alt="Payments Methods">
+			  </div>
+
+			  <br><br>
+			  <div class="thumbnail">
+				<img src="themes/images/payment_methods.png" title="Payment Methods" alt="Payments Methods">
+				<div class="caption">
+				  <h5>Payment Methods</h5>
+				</div>
+			  </div>
+
+	
+       </div>	
+	
+</div> <!--side bar end close tag-->
+
+
+<!-- Sidebar end=============================================== -->
+<div class="span9" >				<div class="row-fluid">
+			
+	<div id="featured" class="carousel slide">
+
+
+	<div class="well well-small" >
+
+	<h4>Featured Products <small class="pull-right">200+ featured products</small></h4>
+	
+		<!--  total 5  -->
+
+	<div class="carousel-inner blockdiv" style="padding-top: 10px;">
+
+	  <div class="item active">
+
+	  <ul class="thumbnails">
+
+		<li class="span3" >  
+
+		  <div class="thumbnail" >
+		  <i class="tag"></i>
+			<a href="product_details.html?name=Guitar&about=It is made in India * Low cost * 45 percentage discount&link=b1.png&cost=450&desc=The new Stylish 10 model Thing" ><img src="themes/images/products/b1.png" alt=""></a>
+			<div class="caption"> 
+			  <h5>Guitars</h5> 
+			  <h4><a class="btn" href="product_details.html?name=Guitar&about=It is made in India * Low cost * 45 percentage discount&link=b1.png&cost=450&desc=The new Stylish 10 model Thing" >VIEW</a> <span class="pull-right">₹6220</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+		  <i class="tag"></i>
+			<a href="product_details.html?name=Sport shoe&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/b2.png" alt=""></a>
+			<div class="caption">
+			  <h5>Sport shoes</h5>
+			  <h4><a class="btn" href="product_details.html?name=Sport shoe&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹222</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+		  <i class="tag"></i>
+			<a href="product_details.html?name=Adidas and puma &about=It is made in India * Low cost * 45 percentage discount&link=b3.png&cost=450&desc=The new Stylish 10 model Thing">
+			<img src="themes/images/products/b3.png" alt=""></a>
+			<div class="caption">
+			  <h5>Adidas and Puma</h5>
+			   <h4><a class="btn" href="product_details.html?name=Adidas and puma &about=It is made in India * Low cost * 45 percentage discount&link=b3.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹322</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+		  <i class="tag"></i>
+			<a href="product_details.html?name= sport shoe &about=It is made in India * Low cost * 45 percentage discount&link=b4.png&cost=450&desc=The new Stylish 10 model Thing" >
+				<img src="themes/images/products/b4.png" alt=""></a>
+			<div class="caption">
+			  <h5>Sport shoes</h5>
+			   <h4><a class="btn" href="product_details.html?name=Sport shoes &about=It is made in India * Low cost * 45 percentage discount&link=b4.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹522</span></h4>
+			</div>
+		  </div>
+		</li>
+
+	  </ul>
+
+	  </div>
+
+	   <div class="item">
+	  <ul class="thumbnails">
+		<li class="span3">
+		  <div class="thumbnail">
+		  <i class="tag"></i>
+			<a href="product_details.html?name=cameras&about=It is made in India * Low cost * 45 percentage discount&link=5.jpg&cost=450&desc=The new Stylish 10 model Thing">
+			<img src="themes/images/products/5.jpg" alt=""></a>
+			<div class="caption">
+			  <h5>Cameras</h5>
+			  <h4><a class="btn" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=5.jpg&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹55,220</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+		  <i class="tag"></i>
+			<a href="product_details.html?name=LED TV&about=It is made in India * Low cost * 45 percentage discount&link=6.png&cost=450&desc=The new Stylish 10 model Thing">
+			<img src="themes/images/products/6.png" alt=""></a>
+			<div class="caption">
+			  <h5>LED TV</h5>
+			  <h4><a class="btn" href="product_details.html?name=LED TV&about=It is made in India * Low cost * 45 percentage discount&link=6.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹7000</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=Pendrive&about=It is made in India * Low cost * 45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/7.jpg" alt=""></a>
+			<div class="caption">
+			  <h5>Pendrive </h5>
+			   <h4><a class="btn" href="product_details.html?name=Pendrive&about=It is made in India * Low cost * 45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹150</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=Drimmer&about=It is made in India * Low cost * 45 percentage discount&link=8.png&cost=450&desc=The new Stylish 10 model Thing" >
+				<img src="themes/images/products/8.png" alt=""></a>
+			<div class="caption">
+			  <h5>Styling drimmer</h5>
+			   <h4><a class="btn"  href="product_details.html?name=Drimmer&about=It is made in India * Low cost * 45 percentage discount&link=8.png&cost=450&desc=The new Stylish 10 model Thing" >VIEW</a> <span class="pull-right">₹220</span></h4>
+			</div>
+		  </div>
+		</li>
+	  </ul>
+	  </div>
+	   <div class="item">
+	  <ul class="thumbnails">
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing">
+			<img src="themes/images/products/9.jpg" alt=""></a>
+			<div class="caption">
+			  <h5>Camera</h5>
+			  <h4><a class="btn"   href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹4500</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a   href="product_details.html?name=Red T-shirt&about=It is made in India * Low cost * 45 percentage discount&link=10.png&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/10.png" alt=""></a>
+			<div class="caption">
+			  <h5>Red T-shirt</h5>
+			  <h4><a class="btn"  href="product_details.html?name=Red T-shirt&about=It is made in India * Low cost * 45 percentage discount&link=10.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹100</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/11.jpg" alt=""></a>
+			<div class="caption">
+			  <h5>Camera</h5>
+			   <h4><a class="btn" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing" >VIEW</a> <span class="pull-right">₹21200</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=Speakers&about=It is made in India * Low cost * 45 percentage discount&link=1.png&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/1.png" alt=""></a>
+			<div class="caption">
+			  <h5>Speakers</h5>
+			   <h4><a class="btn"  href="product_details.html?name=Speakers&about=It is made in India * Low cost * 45 percentage discount&link=1.png&cost=450&desc=The new Stylish 10 model Thing"  >VIEW</a> <span class="pull-right">₹5000</span></h4>
+			</div>
+		  </div>
+		</li>
+	  </ul>
+	  </div>
+	   <div class="item">
+	  <ul class="thumbnails">
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=lenovo laptop&about=It is made in India * Low cost * 45 percentage discount&link=2.png&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/2.png" alt=""></a>
+			<div class="caption">
+			  <h5>Lenovo laptop</h5>
+			  <h4><a class="btn" href="product_details.html?name=lenovo laptop&about=It is made in India * Low cost * 45 percentage discount&link=2.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹21200</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=samsung&about=It is made in India * Low cost * 45 percentage discount&link=3.png&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/3.png" alt=""></a>
+			<div class="caption">
+			  <h5>Samsung phone</h5>
+			  <h4><a class="btn" href="product_details.html?name=samsung&about=It is made in India * Low cost * 45 percentage discount&link=3.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> <span class="pull-right">₹15000</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=4.jpg&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/4.jpg" alt=""></a>
+			<div class="caption">
+			  <h5>Camera</h5>
+			   <h4><a class="btn" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=4.jpg&cost=450&desc=The new Stylish 10 model Thing" >VIEW</a> <span class="pull-right">₹8000</span></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a href="product_details.html?name=Yellow T-Shirt&about=It is made in India * Low cost * 45 percentage discount&link=5.png&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/5.png" alt=""></a>
+			<div class="caption">
+			  <h5>Yellow T-shirt</h5>
+			   <h4><a class="btn" href="product_details.html?name=Yellow T-Shirt&about=It is made in India * Low cost * 45 percentage discount&link=5.png&cost=450&desc=The new Stylish 10 model Thing">VIEW</a> 
+				
+				<span class="pull-right">₹226</span></h4>
+			</div>
+		  </div>
+
+		</li>
+
+	  </ul>
+
+	  </div> <!-- item tag closed -->
+	  
+	</div>  <!-- carousel inner tag closed -->
+
+	  <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
+	  <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+	  </div>
+	  </div>
+</div>
+
+<h4>Latest Products </h4>
+	  <ul class="thumbnails blockdiv" style="padding-top: 20px;"> 
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=LED TV&about=It is made in India * Low cost * 45 percentage discount&link=6.png&cost=450&desc=The new Stylish 10 model Thing">
+				<img src="themes/images/products/6.png" alt=""/></a>
+			<div class="caption">
+			  <h5>LED TV</h5>	 
+			  <h4 style="text-align:center">
+				<a class="btn" href="product_details.html?name=LED TV&about=It is made in India * Low cost * 45 percentage discount&link=6.png&cost=450&desc=The new Stylish 10 model Thing"> <i class="icon-zoom-in"></i></a>
+				 <a class="btn" href="product_details.html?name=LED TV&about=It is made in India * Low cost * 45 percentage discount&link=6.png&cost=450&desc=The new Stylish 10 model Thing">Buy <i class="icon-shopping-cart">
+
+				 </i></a> <a class="btn btn-primary" href="#">₹21000</a></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=Pendrive&about=It is made in India * Low cost * 45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/7.jpg" alt=""/>
+			</a>
+			<div class="caption">
+			  <h5>Pendrive</h5>
+		  
+			 <h4 style="text-align:center"><a class="btn"  href="product_details.html?name=Pendrive&about=It is made in India * Low cost * 45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing">
+				 <i class="icon-zoom-in"></i></a> <a class="btn"  href="product_details.html?name=Pendrive&about=It is made in India * Low cost * 45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing">Buy <i class="icon-shopping-cart"></i></a>
+				  <a class="btn btn-primary" href="product_details.html?name=Pendrive&about=It is made in India * Low cost *  45 percentage discount&link=7.jpg&cost=450&desc=The new Stylish 10 model Thing">₹2000</a></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=shoes&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=Straight walk forever"><img src="themes/images/products/b2.png" alt=""/></a>
+			<div class="caption">
+			  <h5>Adidas shoe</h5>
+			 
+			   <h4 style="text-align:center">
+				<a class="btn" href="product_details.html?name=shoes&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=Straight walk forever"> <i class="icon-zoom-in"></i>
+				</a> <a class="btn"  href="product_details.html?name=shoes&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=Straight walk forever">Buy 
+					<i class="icon-shopping-cart"></i>
+				</a> <a class="btn btn-primary"  href="product_details.html?name=shoes&about=It is made in India * Low cost * 45 percentage discount&link=b2.png&cost=450&desc=Straight walk forever">₹450</a></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a   href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/9.jpg" alt=""/></a>
+			<div class="caption">
+			  <h5>Camera</h5>
+			
+			  <h4 style="text-align:center">
+				<a class="btn" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing"> <i class="icon-zoom-in"></i></a>
+				 <a class="btn" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing">Buy <i class="icon-shopping-cart"></i></a> 
+				 <a class="btn btn-primary" href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=9.jpg&cost=450&desc=The new Stylish 10 model Thing">₹37000</a></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a  href="product_details.html?name=Laptop&about=It is made in India * Low cost * 45 percentage discount&link=12.png&cost=44150&desc=The new Stylish 10 model Thing"><img src="themes/images/products/12.png" alt=""/></a>
+			<div class="caption">
+			  <h5>Lenova laptopt</h5>
+			
+			  <h4 style="text-align:center">
+				<a  href="product_details.html?name=Laptop&about=It is made in India * Low cost * 45 percentage discount&link=12.png&cost=44150&desc=The new Stylish 10 model Thing"> 
+				<i class="icon-zoom-in"></i></a>
+				 <a class="btn"   href="product_details.html?name=Laptop&about=It is made in India * Low cost * 45 percentage discount&link=12.png&cost=44150&desc=The new Stylish 10 model Thing">Buy <i class="icon-shopping-cart"></i></a> 
+				 <a class="btn btn-primary"   href="product_details.html?name=Laptop&about=It is made in India * Low cost * 45 percentage discount&link=12.png&cost=44150&desc=The new Stylish 10 model Thing">₹44150</a></h4>
+			</div>
+		  </div>
+		</li>
+		<li class="span3">
+		  <div class="thumbnail">
+			<a     href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing"><img src="themes/images/products/11.jpg" alt=""/></a>
+			<div class="caption">
+			  <h5>Camera</h5>
+			  
+			   <h4 style="text-align:center">
+				<a class="btn"  href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing"> <i class="icon-zoom-in"></i>
+			</a> <a class="btn"  href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing" >Buy <i class="icon-shopping-cart">
+
+			</i></a> <a class="btn btn-primary"  href="product_details.html?name=camera&about=It is made in India * Low cost * 45 percentage discount&link=11.jpg&cost=450&desc=The new Stylish 10 model Thing">₹31000</a></h4>
+			</div>
+		  </div>
+		</li>
+	  </ul>	
+
+</div>
+</div>
+</div>
+</div>	
+ 
+<!-- Footer ================================================================== -->
+
+	<div  id="footerSection">
+	<div class="container">
+		<div class="row">  
+			<div class="span3">
+				<h5>ADMIN BLOG</h5>
+				<a href="Admin.html">ADMIN PAGE</a>   
+				<a href="Logout.html">ADMIN LOGOUT</a> 
+				<a href="Adminpanel.html">ADMIN PANEL</a>
+				<a href="Adminlogin.html">ADMIN LOGIN</a>
+				<a href="Addpr.html">ADD MORE PRODUCTS</a>
+			 </div>
+			<div class="span3">
+				<h5>INFORMATION</h5>
+				<a href="index.html">HOME PAGE</a>  
+				<a href="contact.html">CONTACT</a>  
+				<a href="contact.html">LEGAL NOTICE</a>  
+				<a href="contact.html">TERMS AND CONDITIONS</a> 
+			 </div>  
+			<div class="span3 ">
+				<h5>OUR OFFERS</h5>
+				<a href="#">FEATURED PRODUCTS</a> 
+				<a href="#">LATEST OFFERS</a>  
+				<a href="#">SUPPLIERS</a> 
+			 </div>
+			<div id="socialMedia" class="span3 ">
+				<h5>SOCIAL MEDIA </h5>
+				<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube"/></a>
+			 </div> 
+		 </div>
+	</div><!-- Container End -->
+	</div>
+
+<!--Footer-->
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="themes/js/jquery.js" type="text/javascript"></script>
+	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="themes/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="themes/js/bootshop.js"></script>
+    <script src="themes/js/jquery.lightbox-0.5.js"></script>
+	
+	<!-- Themes switcher section ============================================================================================= -->
+
+<span id="themesBtn"></span>
+</body>
+
+</html>
+<script  src="Fun.js"> 
+
+////////////////////////////////////////////////////
+// process for fetching featured items in stock
+
+</script>
+
